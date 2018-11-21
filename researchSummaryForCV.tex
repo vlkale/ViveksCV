@@ -1,0 +1,74 @@
+%I'm a Computer Scientist at the University of Southern California's 's
+%Information Sciences Institute. 
+My work focuses on improving performance of
+scientific codes run on supercomputers with multi-core nodes, in
+particular on developing strategies to efficiently schedule iterations of a 
+computational loop of an application code on cores of a multi-core node, which was the focus of my PhD work. 
+
+%During my PhD, my research focused on
+%self-adaptive algorithmic strategies for use in High Performance
+%Computing (HPC) codes,
+
+Prior to my PhD work, I was
+involved in the effort on Our Parallel Patterns developed by
+University of California at Berkeley at University of Illinois at
+Urbana-Champaign, resulting in publications 13-14 and, later, 15-16. 
+%TODO: connect the text below with other work. 
+I also was involved in work on the MPI
+shared memory extensions model for MPI-3, also known as the
+MPI+MPI model, resulting in publication 11. Additionally, I worked on
+performance optimizations 
+a code involving a Lattice-Boltzmann computation that simulated blood flow of a human's
+heart run on a cluster of multi-core nodes, resulting in publication 12. 
+My dissertation work was studying and developing lightweight loop scheduling 
+strategies to improve the scalability of bulk-synchronous MPI+OpenMP
+application codes run on supercomputers with multi-core nodes. 
+The work resulted in publications 1-10 and 16.
+% A motivation for such self-adaptive
+%algorithmic strategies is to optimize performance of such codes in the
+%presence of the amplification problem, a problem projected to induce
+%serious performance degradation when such codes are run on
+%supercomputers on the order of 1,000,000 nodes. 
+The scheduling strategies developed can be beneficial to mitigate the amplification
+problem, a problem shown to cause serious performance bottlenecks for
+bulk-synchronous and loosely synchronous MPI applications running on
+next-generation supercomputers having on the order of 1,000,000 nodes,
+as discussed in publications 7 and 10. The strategies have been applied to 
+Communication-Avoiding dense matrix factorization codes, 
+%specifically 
+%Communication-avoiding LU and Communication-avoiding QR
+studied in publications 5 and 8,
+regular mesh computations, studied in publication 10, and n-body
+simulations, studied in publications 4 and 6. 
+%TODO: fix the below sentence to connect with above. 
+Additionally, a general development methodology for the strategies was designed
+for use in a variety of real-world numerical simulations. The effort to do so
+was a study of composing different types of low-overhead
+loop scheduling strategies to form new loop scheduling strategies and
+resulted in publication 4. 
+
+
+%I have worked on low-overhead dynamic scheduling strategies for
+%performance tuning MPI+OpenMP codes on multi-core processors. 
+
+My current work involves performance optimizations that include
+techniques of auto-tuning and loop scheduling of ptychography solvers
+intended to run on supercomputers having nodes with GPUs and/or MICs. 
+I'm working towards a publication that describes performance
+optimizations done to the application code.
+I'm involved in the development of user-defined loop schedules
+for OpenMP, resulting in publication 2. Additionally, I've done
+research on a technique that combines OpenMP-style loop scheduling and
+Charm++ load balancing, resulting in publication 1. 
+
+%My PhD research was focused on self-adaptive algorithmic strategies
+%for use in High Performance Computing (HPC) codes, specifically for
+%BLAS operations (e.g., matrix-matrix multiplication), and dense matrix
+%factorizations. A motivation for such self-adaptive algorithmic
+%strategies is to optimize performance of such codes in the presence of
+%the amplification problem, a problem projected to induce serious
+%performance degradation when such codes
+%are run on supercomputers on the order of 1,000,000 processors. A key
+%focus was to provide the self-adaptive strategies as a software
+%package to be used by real-world numerical simulations such as the
+%simulation of blood flow in a human heart.

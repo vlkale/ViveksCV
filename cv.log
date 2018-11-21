@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 NOV 2018 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 NOV 2018 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,14 +276,7 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-
-! LaTeX Error: File `./listOfSkillSets.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-(./listOfExperiences.tex
+(./listOfSkillSets.tex) (./listOfExperiences.tex
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
 
@@ -339,39 +332,19 @@ Overfull \hbox (1.06876pt too wide) in paragraph at lines 83--86
 -al-lel Pat-terns and the NAS Par-al-lel Bench-
  []
 
+) (./listOfSocieties.tex) (./listOfCoursesTaught.tex [3]) (./listOfServices.tex
 )
-
-! LaTeX Error: File `./listOfSocieties.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-
-! LaTeX Error: File `./listOfCoursesTaught.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
-
-! LaTeX Error: File `./listOfServices.tex' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
-
-Enter file name: 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
-[3]
+ [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 95.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 5726 strings out of 492649
- 82739 string characters out of 6129622
- 185012 words of memory out of 5000000
+ 5738 strings out of 492649
+ 82940 string characters out of 6129622
+ 186012 words of memory out of 5000000
  9561 multiletter control sequences out of 15000+600000
  7593 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -386,10 +359,10 @@ r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cv.pdf (3 pages, 146380 bytes).
+Output written on cv.pdf (4 pages, 149083 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
