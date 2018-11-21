@@ -12,7 +12,7 @@ coverletterLLNL.pdf: coverletterLLNL.tex
 cv.pdf: cv.tex
 	pdflatex cv.tex
 
-resume.pdf: resume.tex
+cv.pdf: resume.tex
 	pdflatex resume.tex
 
 HLF-app.pdf: HLF-app.tex
