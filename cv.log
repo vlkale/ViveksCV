@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.13)  4 DEC 2018 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.13)  4 DEC 2018 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -270,32 +270,17 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
 )
-(./listOfSkillSetsForCV.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-) (./listOfExperiences.tex [1
+(./listOfSkillSetsForCV.tex) (./listOfExperiences.tex [1
 
 {/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (9.29749pt too wide) in paragraph at lines 38--43
+Overfull \hbox (9.29749pt too wide) in paragraph at lines 36--41
 []\OT1/cmr/m/n/10 Implemented mixed static/dynamic loop schedul-ing strate-gies
  within Charm++'s thread schedul-
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
-) [2] (./listOfPubs.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
+) (./listOfPubs.tex [2]
 Overfull \hbox (18.44124pt too wide) in paragraph at lines 20--24
 []\OT1/cmr/m/n/10 Vivek Kale, Harshitha Menon and Karthik Senthil. \OT1/cmr/bx/
 it/10 Adap-tive Loop Schedul-ing with Charm++
@@ -347,7 +332,7 @@ Here is how much of TeX's memory you used:
  9354 multiletter control sequences out of 15000+600000
  7761 words of font info for 28 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,8n,35p,303b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,303b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -360,7 +345,7 @@ ublic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type
 type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018basic/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cv.pdf (4 pages, 155452 bytes).
+Output written on cv.pdf (4 pages, 155660 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream

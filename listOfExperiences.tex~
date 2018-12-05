@@ -14,16 +14,14 @@ of Charm++.
 techniques that combine loop scheduling and load balancing to improve
 performance of scientific applications.
 \item Working with OpenMP Language Committee to support
-\url{https://sites.google.com/site/userdefschedopenmp}{user-defined schedules} in OpenMP.
+\url{https://sites.google.com/site/userdefschedopenmp}[user-defined schedules] in OpenMP.
 \item Translating an x-ray tomography code written in
 Matlab code to C code and then parallelizing it to run on a supercomputer
 having nodes with GPGPUs. 
 \item Working on modifications to LLVM compiler to support new
 OpenMP loop schedules. 
-\item Worked on ensuring external network infrastructure to
-support transfer of application code's input data files were adequate
-for an application code's efficient execution using the Globus
-Toolkit.
+\item Worked on ensuring external network infrastructure to support transfer of application code's input data files were adequate
+for an application code's efficient execution using the Globus Toolkit.
 %\item \small Managing a git repository for a team working on
 %performance optimizations of the application program.
 \item Working in team to manage computational performance aspects of running an application program involving Fast Fourier Transformation and image reconstruction algorithms. 
@@ -47,12 +45,10 @@ strategies within Charm++'s thread scheduling library.
 { University of Illinois$\>$$\>$$\>$$\>$Postdoctoral Associate$\>$$\>$$\>$$\>$Jul. '15 – Dec. '15}
 \vspace*{-0.0in}
 \begin{itemize} 
-\item Developed library that allows application
-programmers to use strategies from dissertation.
+\item Developed library that allows application programmers to use strategies from dissertation.
 \item Adapted a plasma physics application code to work on a
 GPGPU processor and Intel Xeon Phi.
-\item Incorporated over-decomposition and locality-aware scheduling
-into strategies from dissertation.
+\item Incorporated over-decomposition and locality-aware scheduling into strategies from dissertation.
 \end{itemize}
 
 {Lawrence Livermore Nat’l Lab$\>$$\>$$\>$$\>$Lawrence Scholar$\>$$\>$$\>$$\>$Feb. '12 – Jun. '14}
