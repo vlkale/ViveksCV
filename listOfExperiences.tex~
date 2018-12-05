@@ -68,6 +68,7 @@ of low-overhead schedulers.
 \begin{itemize} 
 \item Experimented with different OpenMP parameters of implemented MPI+OpenMP application code to understand performance optimizations on
 LLNL supercomputers.
+\item Developed software design for low-overhead loop scheduling library based on libgomp software design.
 \end{itemize} 
 
 {Lawrence Berkeley Nat’l Lab$\>$$\>$$\>$$\>$Summer Scholar$\>$$\>$$\>$$\>$Aug. '10 - Sep. '10}
@@ -76,15 +77,14 @@ LLNL supercomputers.
 \item compared with collectives in reference to MPI (mpich2) runtime system.
 \end{itemize}
 
-{Lawrence Livermore Nat’l Lab$\>$$\>$$\>$$\>$Summer Scholar$\>$$\>$$\>$$\>$May. '10 - Aug. '10}
+{Lawrence Livermore Nat’l Lab$\>$$\>$$\>$$\>$Scholar$\>$$\>$$\>$$\>$May. '10 - Aug. '10}
 \begin{itemize}
 \item Modified libgomp runtime system in order to integrate low-overhead schedulers within it.
 \item Developed an algorithm multi-stage low-overhead loop scheduler with each stage associated with a level in the memory hierarchy, allowing for MPI-shared memory extensions to be used in conjunction with the low-overhead loop scheduling strategies.
 \end{itemize}
-
-{\small Goldman-Sachs$\>\>\>\>$Summer Analyst$\>\>\>\>$Jun. ‘09 – Sep. ‘09}
+{Goldman-Sachs$\>\>\>\>$Summer Analyst$\>\>\>\>$Jun. ‘09 – Sep. ‘09}
 \vspace*{-0.0in}
 \begin{itemize}
-\small \item \small Wrote code for testing trading system infrastructure functions under extreme market conditions.
-\item \small Analyzed performance bottlenecks of system infrastructure functions.
+\item Wrote code for testing trading system infrastructure functions under extreme market conditions.
+\item Analyzed performance bottlenecks of system infrastructure functions.
 \end{itemize}

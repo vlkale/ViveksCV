@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.13)  4 DEC 2018 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.13)  4 DEC 2018 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,39 +279,33 @@ Overfull \hbox (9.29749pt too wide) in paragraph at lines 36--41
  []
 
 ) [2] (./listOfPubs.tex
-Overfull \hbox (18.44124pt too wide) in paragraph at lines 20--24
-[]\OT1/cmr/m/n/10 Vivek Kale, Harshitha Menon and Karthik Senthil. \OT1/cmr/bx/
-it/10 Adap-tive Loop Schedul-ing with Charm++
- []
-
-
-Overfull \hbox (18.44124pt too wide) in paragraph at lines 29--33
-[]\OT1/cmr/m/n/10 Vivek Kale, Harshitha Menon and Karthik Senthil. \OT1/cmr/bx/
-it/10 Adap-tive Loop Schedul-ing with Charm++
- []
-
-
-Overfull \hbox (31.8718pt too wide) in paragraph at lines 43--46
-[]\OT1/cmr/m/n/10 Vivek Kale, Amanda Ran-dles and William D. Gropp. \OT1/cmr/bx
-/it/10 Locality-Optimized Mixed Static/Dynamic
- []
-
-
-Overfull \hbox (5.03134pt too wide) in paragraph at lines 52--56
+Overfull \hbox (5.03134pt too wide) in paragraph at lines 18--19
 []\OT1/cmr/m/n/10 Simplice Don-fack, Vivek Kale, Laura Grig-ori and William D. 
 Gropp. \OT1/cmr/bx/it/10 Hy-brid Static/Dynamic
  []
 
 
-Overfull \hbox (0.53874pt too wide) in paragraph at lines 57--61
+Overfull \hbox (0.53874pt too wide) in paragraph at lines 19--22
 []\OT1/cmr/m/n/10 Vivek Kale, Ab-hi-nav Bhatele and William D. Gropp. \OT1/cmr/
 bx/it/10 Weighted Locality-sensitive Schedul-
  []
 
 
-Overfull \hbox (1.06876pt too wide) in paragraph at lines 83--86
+Overfull \hbox (1.06876pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/m/n/10 Vivek Kale. \OT1/cmr/bx/it/10 The Cor-re-la-tion be-tween Par
 -al-lel Pat-terns and the NAS Par-al-lel Bench-
+ []
+
+
+Overfull \hbox (18.44124pt too wide) in paragraph at lines 41--42
+[]\OT1/cmr/m/n/10 Vivek Kale, Harshitha Menon and Karthik Senthil. \OT1/cmr/bx/
+it/10 Adap-tive Loop Schedul-ing with Charm++
+ []
+
+
+Overfull \hbox (31.8718pt too wide) in paragraph at lines 43--45
+[]\OT1/cmr/m/n/10 Vivek Kale, Amanda Ran-dles and William D. Gropp. \OT1/cmr/bx
+/it/10 Locality-Optimized Mixed Static/Dynamic
  []
 
 ) [3] (./listOfSocieties.tex) (./listOfCoursesTaught.tex) (./listOfServices.tex
@@ -324,13 +318,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 96.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 5737 strings out of 494091
- 83247 string characters out of 6163523
- 182319 words of memory out of 5000000
+ 5735 strings out of 494091
+ 83233 string characters out of 6163523
+ 181319 words of memory out of 5000000
  9353 multiletter control sequences out of 15000+600000
  7761 words of font info for 28 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 29i,8n,35p,303b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,337b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -342,10 +336,10 @@ ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018basic/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on cv.pdf (4 pages, 146219 bytes).
+Output written on cv.pdf (4 pages, 142873 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
