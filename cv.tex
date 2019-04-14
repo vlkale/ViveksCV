@@ -8,10 +8,18 @@
 \documentclass[]{res} 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+%\usepackage{fancyhdr}
+%\usepackage{lastpage}
+\pagestyle{plain}
+%\fancyhf{}
+%\rfoot{Page \thepage}
+\usepackage{etoolbox}
+
 %\usepackage{phonenumber}
 \usepackage{hyperref}
 \usepackage{url} 
 \usepackage{xcolor}
+
 
 \begin{document}
 \name{Vivek L. Kale, PhD}
@@ -22,10 +30,10 @@
 
 {\small 
 \centering
-\textit{phone}: %\phonenumber[country=US,foreign]{2173697996} .
+\textit{Phone}: %\phonenumber[country=US,foreign]{2173697996} .
 \href{tel:12173697996}{+01 1-217-369-7996} .
-\textit{e-mail}: vivek.lkale@gmail.com .
-\textit{web}: \url{http://vlkale.github.io} \\
+\textit{Email}: vivek.lkale@gmail.com .
+\textit{Web}: \url{http://vlkale.github.io} \\
 }
 
 \vspace*{0.1in}
@@ -39,6 +47,9 @@
 University of Illinois at Urbana-Champaign, 2007
 %\quad \quad \textit{Undergraduate GPA}: 3.51/4.00\\
 
+\textbf{Master of Science, Computer Science}\\ 
+University of Illinois at Urbana-Champaign, 2010
+
 \textbf{Doctor of Philosophy, Computer Science}\\
 University of Illinois at Urbana-Champaign, 2015\\
 \quad \quad \textit{Advisor}: William D. Gropp\\
@@ -46,19 +57,19 @@ University of Illinois at Urbana-Champaign, 2015\\
 
 \section{Honors}
 \vspace*{0.2in}
-\input{./listOfAwards}
+\input{listOfAwards}
 
 \section{Courses Taken}
 \vspace*{0.2in}
-\input{./listOfCoursesShort}
+\input{listOfCourses}
 
 \section{Technical Skills}
 \vspace*{0.1in}
-\input{./listOfSkillSetsForCV}
+\input{listOfSkillSetsForCV}
 
 \section{Experience}
 \vspace*{0.2in} 
-\input{./listOfExperiences}
+\input{listOfExperiences}
 
 %TODO: clarify and strengthen 
 %TODO: make consistent with LinkedIn description 
@@ -70,7 +81,7 @@ University of Illinois at Urbana-Champaign, 2015\\
 \comments{
 \section{Volunteering Opportunities}
 \vspace{0.1in}
-\input{./listOfvolOpps}
+\input{listOfvolOpps}
 }
 
 \section{List of Publications}
