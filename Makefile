@@ -1,4 +1,4 @@
-all: cv.pdf
+all: cv.pdf resume.pdf
 
 TEX_FILES = coverletter-slides.tex content_coverletterLLNL-slides.tex coverletterLLNL.tex cv.tex resume.tex
 
