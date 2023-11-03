@@ -12,14 +12,17 @@ coverletterLLNL.pdf: coverletterLLNL.tex
 cv.pdf: cv.tex
 	pdflatex --interaction=batchmode cv.tex > /dev/null 2>&1
 	echo "Generated Vivek's CV"
+	open cv.pdf
 
 resume.pdf: resume.tex
 	pdflatex --interaction=batchmode resume.tex
 	echo "Generated Vivek's resume"
+	open resume.pdf 
 
 resume-1pager.pdf: resume-1pager.tex
 	pdflatex --interaction=batchmode resume-1pager.tex
 	echo "generated Vivek's 1 pager resume" 
+	open resume-1pager.pdf
 
 HLF-app.pdf: HLF-app.tex
 	pdflatex HLF-app.tex
