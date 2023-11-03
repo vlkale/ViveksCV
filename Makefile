@@ -1,6 +1,6 @@
-all: cv.pdf resume.pdf
+all: cv.pdf resume.pdf resume-1pager.pdf
 
-TEX_FILES = coverletter-slides.tex content_coverletterLLNL-slides.tex coverletterLLNL.tex cv.tex resume.tex
+TEX_FILES = coverletter-slides.tex content_coverletterLLNL-slides.tex resume-1pager.tex coverletterLLNL.tex cv.tex resume.tex
 
 force:
 	rm -f coverletter-slides.pdf
@@ -10,10 +10,16 @@ coverletterLLNL.pdf: coverletterLLNL.tex
 	pdflatex viveksCVforLLNLp107.tex
 
 cv.pdf: cv.tex
-	pdflatex cv.tex
+	pdflatex --interaction=batchmode cv.tex > /dev/null 2>&1
+	echo "Generated Vivek's CV"
 
 resume.pdf: resume.tex
-	pdflatex resume.tex
+	pdflatex --interaction=batchmode resume.tex
+	echo "Generated Vivek's resume"
+
+resume-1pager.pdf: resume-1pager.tex
+	pdflatex --interaction=batchmode resume-1pager.tex
+	echo "generated Vivek's 1 pager resume" 
 
 HLF-app.pdf: HLF-app.tex
 	pdflatex HLF-app.tex
