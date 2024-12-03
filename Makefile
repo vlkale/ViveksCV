@@ -30,7 +30,7 @@ cleanResume:
 	rm -f resume.aux resume.toc resume.log resume.pdf
 
 clean:
-	rm -f *.aux *.toc *.log *.bbl *.blg 
+	rm -f *.aux *.toc *.log *.pdf
 
 realclean:
-	rm -f *.aux *.toc *.log *.bbl *.blg
+	rm -f *.aux *.toc *.log *.pdf *.pdf~ *.tex~
