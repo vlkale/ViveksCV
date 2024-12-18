@@ -6,53 +6,55 @@
 \documentclass[9pt]{res} 
 
 \usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
 \usepackage[english]{babel}
 \usepackage{xcolor}
 \usepackage{hyperref}
 
 \begin{document} 
 
-\name{Vivek L. Kale}
-%\address{1401 South State Street\\
-%Chicago, IL 60605 \\ 217-369 - 7996}
-%\phone{217-369-7996}
-%\email{vivek.lkale@gmail.com}
-%\web{http://vivek112.googlepages.com}
-%\citizenship{U.S. Citizen}
-\vspace{-0.1in}
+\name{\fontfamily{lmss}\selectfont Vivek L. Kale}
+\vspace{-0.7in}
 \begin{resume}
-\vspace{-0.4in}
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-\begin{center} \textit{\bf E-mail}: \url{vivek.lkale@gmail.com}. \textit{\bf Web}: \url{http://vlkale.github.io}. 
-   \textbf{US Citizen}
+ \fontfamily{lmss}\selectfont
+\vspace{-0.42in}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.6pt}\smallskip
+\input{contactInfo}
+\begin{center} 
+\input{contactInfo}
 \end{center}
 %\moveleft.5\sectionwidth\centerline{U.S. Citizen} 
 \begin{center}
 %\moveleft.5\sectionwidth\centerline{{\it \small Objective}: \small Obtain position as software engineer specializing in performance engineering.}
 \end{center}
-\vspace{-0.65in}
+\vspace{-0.5in}
 \small
-\section{Experience}
-\vspace{0.2in}
+\section{\fontfamily{lmss}\selectfont Experience}
+\vspace{0.25in}
 \input{listOfExperiences-for1pagerResume}
 
-\section{Education}
-\vspace{0.02in}
-    \small B.S., Computer Science, 2007, University of Illinois at Urbana-Champaign\\
-    \small Ph.D., Computer Science, 2015, University of Illinois at Urbana-Champaign
+\section{\fontfamily{lmss}\selectfont Education}
+\vspace{0.08in}
+\input{listEducation-resume1pager}
     
-\section{Publications}
-\vspace{-0.1in}
+\section{\fontfamily{lmss}\selectfont Representative Publications}
+\vspace{0.03in}
 \input{listOfPubs-1pager}
 
-\section{Projects}
-\vspace{-0.1in}
+\section{\fontfamily{lmss}\selectfont Representative Projects}
+\vspace{0.02in}
 \input{listOfProjects-for1pagerResume}
 
-\section{Technical Skills}
-\vspace{0.1in}
+\section{\fontfamily{lmss}\selectfont Technical Skills}
+\vspace{0.04in}
 \input{listOfSkillSetsForResume}
 
+%\section{Recent Courses}
+%Introduction to AI/ML for Scientists and Engineers, UCLA Technical Management Program
+%\input{listOfCoursesShort}
 \end{resume}
 
 \end{document}

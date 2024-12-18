@@ -1,0 +1,99 @@
+% A package that allows the selection of items from a list based on
+% the id's of the items in the list (good for CV's) based on an answer
+% by Ryan Reich on TeX.SE
+% http://tex.stackexchange.com/questions/4502/onlyitems-how-to-select-specific-items-from-an-item-list/32611#32611 
+
+
+%%%%%%%%%%%%%%%%%
+\ProvidesPackage{onlyitems}
+
+\RequirePackage{pgfkeys}
+\RequirePackage{pgffor}
+
+
+
+% A huge list of pgfkeys to be set up.  
+\pgfkeys{
+ /onlyitems/.is family, /onlyitems,
+ % Utility keys
+ utility/store tag/.store in = \itemOptions,
+ utility/store bool/.store in = \itemIf,
+ utility/process true/.style = {process/#1 = \iftrue},
+ utility/process false/.style = {process/#1 = \iffalse},%\fi
+ utility/set store bool/.style 2 args = {#1/.style = {utility/store bool = #2}},
+ utility/set select style/.style 2 args = {utility/set store bool = {select/#1}{#2}},
+ utility/verdict/.style = {},
+ utility/add to reset/.style = {
+  reset/.prefix style = {select/#1/.style = {select/.unknown}}
+ },
+ utility/current key/.estore in = \itemKey,
+ % Nothing in the process family is ever set, so any selection option is set to store a boolean
+ process/.unknown/.style = {
+  utility/current key = \pgfkeyscurrentname,
+  select/\itemKey/.style = {
+   utility/set store bool = {utility/verdict}{#1}
+  },
+  utility/add to reset/.expand once = \itemKey
+ },
+ % For clearing the list of selected items (to support nested {itemize})
+ reset/.style = {},
+ reset/reset/.style = {reset/.style = {reset/reset, default}},
+ reset/reset,
+ % Here are the options you can actually pass.  These go to the {itemize}...
+ include/.style = {utility/process true/.list  = {#1}},
+ exclude/.style = {utility/process false/.list = {#1}},
+ all/.style  = {utility/set select style = {.unknown}{\iftrue}},
+ none/.style = {utility/set select style = {.unknown}{\iffalse}},%\fi
+ default/.style = {all},
+ % ...and these to the \item's
+ tag/.style = {utility/store tag = {[#1]}},
+ id/.style = {select/#1}, 
+%yossi
+.unknown/.style = {tag=\pgfkeyscurrentname} %if key is
+%.unknown/.code = \onlyitemsset{utility/store tag=\pgfkeyscurrentname} %if key is
+                                %unknown, treat it like a tag. thanks
+                                %to Andrew Stacy: \url{http://tex.stackexchange.com/q/34376/86}
+%end yossi
+}
+
+% Like tikzset, it sets a default key path
+\newcommand\onlyitemsset[1]{\pgfkeys{/onlyitems, #1}}
+
+\makeatletter
+
+\let\itemLaTeX=\item
+% Have to use a \newcount because (ugh) the LaTeX \setcounter is a global assignment
+\newcount\itemsSoFar
+\newcommand\onlyitemsItem[1][]{%
+ % The \egroup closes off any \vbox'es from the previously ignored \item.
+ % The conditional \bgroup cancels it out when there aren't any.
+ \itemIf\bgroup\fi\egroup
+ \let\itemIf=\iffalse%\fi
+ \advance\itemsSoFar by 1 %
+ \onlyitemsset{utility/store tag = {}, utility/verdict/.style = {}, select/\the\itemsSoFar, #1, utility/verdict}%
+ \itemIf
+  \def\next{\expandafter\itemLaTeX\itemOptions}%
+ \else
+  % The vbox is set and then discarded, effectively ignoring an entire \item.
+  % This inner \itemLaTeX is necessary to avoid a glitch when we
+  % ignore the first \item of an itemize that itself contains a nested
+  % \itemize.  Don't ask, I don't know.
+%
+%the \@gobble s are so that various numerated lists still work as if
+%the items are missing (i.e, no side effects). reference: http://tex.stackexchange.com/questions/34811/how-to-skip-an-item-entirely-with-no-side-effects/34821#34821
+  \def\next{\setbox0=\vbox\bgroup\let\stepcounter=\@gobble\let\addtocounter\@gobbletwo\itemLaTeX}%
+ \fi
+ \next
+}
+\makeatother
+
+\newcommand\onlyitems[2][]{%
+\let\item=\onlyitemsItem
+ \let\itemIf=\iftrue
+ \itemsSoFar = 0 %
+ % We have to reset here so that the selections from an outer itemize don't conflict with an inner one.
+ \onlyitemsset{reset, #1}%
+ #2%
+ % This closes off the last \vbox
+ \itemIf\bgroup\fi\egroup
+}
