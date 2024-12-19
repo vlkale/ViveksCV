@@ -12,7 +12,7 @@
 }
 
 \newcommand{\myExpTwo}{
-	\item Owner and IC of Kokkos Tools: merged 15 PRs, averaging 40 lines of code, that improved CMake and Spack Build System, reducing tooling overheads, and tool development.  
+	\item Owner and IC of Kokkos Tools: merged 15 github Pull Requests (PRs), averaging 40 lines of code, that improved CMake and Spack Build System, reducing tooling overheads, and tool development.  
     \item Contributed to autotuning features to the Kokkos 4.5 release. 
 	\item Developed an LLVM-based SymEx tool to debug Kokkos programs that detected 7 Kokkos bug examples with no false positives, leading to a paper at SC24's Correctness workshop. 
     \item Implemented prototype LLVM OpenMP loop transformation directive 'split', leading to a 1.24x speedup for a OpenMP + CUDA benchmark and OpenMP 6.0's split directive.
@@ -22,16 +22,17 @@
 }
 \newcommand{\myExpThree}{
   % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
-   \item Designed and implemented OpenMP user-defined multiGPU scheduling for LLVM to improve within-node load balancing of AI and scientific applications, offering 2x speedup over using MPI for multi-GPU parallelization and leading to two papers at IWOMP 24. 
+   \item Designed and implemented OpenMP user-defined multiGPU scheduling for LLVM, offering 2x speedup over using MPI for multi-GPU parallelization and leading to two papers at IWOMP 24. 
    \item Implemented optimizations in LLVM for OpenMP asynchronous offloading that provided 1.23x speedups, leading to a paper at SC22's HiPar. 
    \item Developed benchmarks to evaluate OpenMP implementations on GPUs, leading to a journal paper and two workshop papers. 
 %  \item Developed benchmarks and evaluating OpenMP implementations, e.g., LLVM's OpenMP, NVIDIA's OpenMP, on Exascale Supercomputers.
-   \item Technical leadership: Led GPU hackathons and training; technical Project Manager for US DoE Exascale Computing Project's SOLLVE project; represented Brookhaven National Laboratory in the OpenMP Architecture Review Board. 
+   \item Technical leadership: Led GPU hackathons and training; technical Project Manager for ECP SOLLVE project; representative in OpenMP ARB
    }
 
 \newcommand{\myExpFour}{
-\item Conducted research and development for User-defined Loop Schedules (UDS) in OpenMP.
-\item Integrated OpenMP UDS loop scheduling strategies into Charm++'s CkLoop. 
+\item Implemented and researched LLVM OpenMP User-defined Loop Schedules (UDS). 
+\item Added a UDS feature to Charm++'s CkLoop, with one PR merged. 
+\item Analysis and optimization of science simulations on NVIDIA GPUs via CUPTI and auto-tuning.  
 }
 
 \textbf{Sandia National Laboratories}\\
@@ -48,29 +49,28 @@
 \begin{itemize}
 \myExpTwo 
 \end{itemize} 
-\textbf{Brookhaven National Laboratory}\\
+\textbf{Brookhaven National Laboratory}\hfill
 \textit{Assistant Computational Scientist} \hfill \textit{May 2019 - August 2022}
 %\vspace{-0.02in}
 \begin{itemize}
 \myExpThree
 \end{itemize}
 
-\comments{
-
-\textbf{Charmworks}\\
-\textit{Software Engineer} \hfill \textit{June 2018 - April 2019}
+\noindent
+\textbf{Charmworks and ISI}\hfill
+\textit{Software Engineer} \hfill \textit{Jan 2016 - April 2019}
 \vspace{-0.02in}
 \begin{itemize}
 \myExpFour
 \end{itemize}
 \noindent
-\textbf{University of Southern California / Information Sciences Institute}\\
+
+\comments{
+\textbf{University of Southern California / ISI}\hfill
 \textit{Computer Scientist} \hfill \textit{Dec 2016 - Jun 2018}
 %\vspace{-0.02in}
 \begin{itemize}
-\item Worked with postdoc on a proposal to study techniques that combine loop scheduling and load balancing to improve performance of scientific applications.
-%\item Worked with OpenMP Language Committee to support user-defined loop schedules in OpenMP.
-\item Made modifications to LLVM compiler to support new OpenMP loop schedules.
+
 \item Worked in team to manage computational performance aspects of running an application program for 3-D image reconstruction algorithms on NVIDIA GPUs.  
 %\item Ensured external network infrastructure to support transfer of application code's input data files were adequate for an application code's efficient execution using the Globus Toolkit. 
 %\item Translated an x-ray tomography code written in Matlab code to C code and then parallelizing it to run on a supercomputer
@@ -80,26 +80,24 @@
 \end{itemize}
 
 \noindent
-\textbf{Charmworks}\\
+\textbf{Charmworks}\hfill
 \textit{Software Developer} \hfill \textit{Jan 2016 - Nov 2016} 
-\vspace*{-0.02in}
+%\vspace*{-0.02in}
 \begin{itemize}
-\item Implemented mixed static/dynamic loop scheduling strategies within Charm++'s thread scheduling library CkLoop. 
+\item Implemented user-defined loop schedules within Charm++'s thread scheduling library CkLoop. 
 %TODO: consider adding 'including in cloud environments' the end of
 %the sentence. 
 %TODO: make paragraph 
-\item Helped to improve portability of Charm++ to a variety of platforms. 
-\item Assisted with business aspects of a high-tech startup. 
+%\item Helped to improve portability of Charm++ to a variety of platforms. 
+%\item Assisted with business aspects of a high-tech startup. 
 \end{itemize} 
-
+}
 \noindent
-\textbf{University of Illinois}\\
+\textbf{University of Illinois}\hfill
 \textit{Postdoctoral Associate} \hfill \textit{Jul 2015 - Dec 2015}
-\vspace*{-0.02in}
+%\vspace*{-0.02in}
 \begin{itemize} 
 %\item Developed LLVM OpenMP lw-sched library that allows application programmers to use strategies from dissertation.
-\item Adapted a plasma physics application code to work on NVIDIA K80 and Intel Xeon Phi.
-\item Incorporated over-decomposition and locality awareness into low-overhead OpenMP loop scheduling strategies. 
+\item Exhibited problem solving: made MPI+OpenMP+OpenACC science simulation code 1.24x faster.
+%\item Incorporated over-decomposition and locality awareness into low-overhead OpenMP loop scheduling strategies. 
 \end{itemize}
-
-}
