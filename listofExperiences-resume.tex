@@ -3,20 +3,14 @@
 % TODO: check for grammare
 % TODO: get checked by recruiters
 
-\newcommand{\myExpOne}{
-\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
-\item Pathfinding and software engineering for tools for Kokkos integrated with (1) HPC performance monitoring (LDMS) and feedback and (2) PMPI and adaptive runtime systems for MPI.
-%\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
-\item Developing AI-assisted HPC Tools through coderosetta.com for Kokkos-CUDA and APEX Kokkos Tools autotuning, resulting in an NVIDIA GTC 2025 poster. 
-}
 
 \newcommand{\myExpTwo}{
 	\item Code development and maintainance of Kokkos Tools by improving build system, tooling overheads, CI, auto-tuning, nvtx/roctx/vtune integration, with 15 github PRs merged.  
    % \item Contributed to autotuning features to the Kokkos 4.5 release. 
-	\item Developed an LLVM-based SymEx tool to debug Kokkos programs that detected 7 Kokkos bug examples with no false positives, leading to a paper at SC24's Correctness workshop. 
-    \item Implemented prototype LLVM OpenMP loop transformation directive 'split', leading to a 1.24x speedup for a OpenMP + CUDA benchmark and OpenMP 6.0's split directive. 
+	\item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
+    \item Implemented prototype LLVM OpenMP loop transformation directive 'split', leading to a 1.24$\times$ speedup for a OpenMP + CUDA benchmark and OpenMP 6.0's split directive. 
   %  \item Developed and implemented CPU+GPU auto-tuning optimizations, leading to a 1.2x speedup. 
-    \item Pathfinding for OpenMP multi-GPU features for NVIDIA DGX, as well as AWS, Google Cloud and OCI, leading to 19 proposed features for OpenMP 6.1/7.0.
+    \item Drafted standards for OpenMP multi-GPU features for NVIDIA DGX, as well as AWS, Google Cloud and OCI, leading to 19 proposed features for OpenMP 6.1/7.0.
     
     %which led to technical report on the OpenMP Set object. 
 
@@ -26,20 +20,22 @@
 }
 \newcommand{\myExpThree}{
   % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
-   \item Implemented OpenMP user-defined multiGPU scheduling for LLVM, offering 2x speedup over using an MPI parallelization, leading to two papers at IWOMP 24. 
-   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that showed 1.23x speedup, leading to a paper at SC22's HiPar. 
+   \item Implemented OpenMP user-defined multiGPU scheduling for LLVM, offering 2$\times$ speedup over using an MPI parallelization, leading to two papers at IWOMP 24. 
+   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that showed 1.23$\times$ speedup, leading to a paper at SC22's HiPar. 
    \item Developed performance benchmarks that evaluated 5 major vendor OpenMP GPU implementations, leading to a journal paper and two workshop papers. 
 %  \item Developed benchmarks and evaluating OpenMP implementations, e.g., LLVM's OpenMP, NVIDIA's OpenMP, on Exascale Supercomputers.
    \item Demonstrated technical leadership as technical Project Manager for ECP SOLLVE project, submitting 9 ECP milestones, organizing 6 OpenMP GPU hackathons, and defining 2 project KPIs. 
  %and voting in 5 OpenMP Committee meetings. 
    }
 
-\newcommand{\myExpFour}{
-\item Implemented and researched LLVM OpenMP User-defined Loop Schedules (UDS). 
-\item Added a UDS feature to Charm++'s CkLoop, with one PR merged. 
-\item Analysis and optimization of science simulations on NVIDIA GPUs via CUPTI and auto-tuning.
-}
 
+
+\newcommand{\myExpOne}{
+%\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
+\item Pathfinding and software engineering for tools for Kokkos integrated with (1) HPC performance monitoring (LDMS) and feedback and (2) PMPI and adaptive runtime systems for MPI.
+%\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
+\item Developing AI-assisted HPC Tools through coderosetta.com for Kokkos-CUDA and APEX Kokkos Tools autotuning, resulting in an NVIDIA GTC 2025 poster. 
+}
 \textbf{Sandia National Laboratories}\\
 \textit{Principal Member of Technical Staff II} \hfill \textit{July 2024 - Present}
 %\vspace{-0.02in}
@@ -61,48 +57,65 @@
 \myExpThree
 \end{itemize}
 
+
+\newcommand{\myExpFour}{
+\item Implemented and specified OpenMP User-defined Loop Schedules (UDS), leading to a paper at IWOMP, a prototype and a feature branch in LLVM. 
+\item Added UDS feature to Charm++ and RAJA, with one github PR merged in Charm++.
+}
 \noindent
-\textbf{Charmworks and ISI}\hfill
-\textit{Software Engineer} \hfill \textit{Jan 2016 - April 2019}
-\vspace{-0.02in}
+\textbf{Charmworks}\hfill
+\textit{Software Engineer} \hfill \textit{May 2018 - May 2019}
+\vspace{-0.01in}
 \begin{itemize}[itemsep=-0.1em]
 \myExpFour
 \end{itemize}
+
+\newcommand{\myExpFive}{
+\item Developed  methodology for a synergistic loop scheduling and load balancing strategy, leading to 1.2$\times$ speedup on the PIC benchmark and an SC18 Best Poster Candidate.
+
+\item Performance analysis and optimization of 3-D image reconstruction application on NVIDIA GPUs via CUPTI and auto-tuning, leading to new CUDA version for PtychoLib. 
+}
 \noindent
-
-\comments{
+%\comments{
 \textbf{University of Southern California / ISI}\hfill
-\textit{Computer Scientist} \hfill \textit{Dec 2016 - Jun 2018}
-%\vspace{-0.02in}
-\begin{itemize}
+\textit{Computer Scientist} \hfill \textit{Dec 2016 - May 2018}
+\begin{itemize}[itemsep=-0.2em]
+\myExpFive
+\end{itemize}
 
-\item Worked in team to manage computational performance aspects of running an application program for 3-D image reconstruction algorithms on NVIDIA GPUs.  
+%\vspace{-0.02in}
+
+%\item Worked in team to manage computational performance aspects of running an application program for 3-D image reconstruction algorithms on NVIDIA GPUs.  
 %\item Ensured external network infrastructure to support transfer of application code's input data files were adequate for an application code's efficient execution using the Globus Toolkit. 
 %\item Translated an x-ray tomography code written in Matlab code to C code and then parallelizing it to run on a supercomputer
 %having nodes with GPGPUs.
 %\item \small Doing optimizations for MPI+CUDA application code involving low-overhead loop scheduling and loop optimizations such as loop unrolling. 
 %\item \small Working on transformations in LLVM. 
-\end{itemize}
 
+
+
+\newcommand{\myExpSix}{
+\item Implemented 3 loop schedules in Charm++'s CkLoop library, leading to 3 github PRs merged. 
+%\item Helped to improve portability of Charm++ to desktop platforms. 
+}
 \noindent
 \textbf{Charmworks}\hfill
-\textit{Software Developer} \hfill \textit{Jan 2016 - Nov 2016} 
+\textit{Software Developer} \hfill \textit{Jan 2016 - Dec 2016} 
 %\vspace*{-0.02in}
 \begin{itemize}
-\item Implemented user-defined loop schedules within Charm++'s thread scheduling library CkLoop. 
+\myExpSix
 %TODO: consider adding 'including in cloud environments' the end of
 %the sentence. 
 %TODO: make paragraph 
-%\item Helped to improve portability of Charm++ to a variety of platforms. 
+
 %\item Assisted with business aspects of a high-tech startup. 
 \end{itemize} 
-}
 \noindent
 \textbf{University of Illinois}\hfill
 \textit{Postdoctoral Associate} \hfill \textit{Jul 2015 - Dec 2015}
 %\vspace*{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
 %\item Developed LLVM OpenMP lw-sched library that allows application programmers to use strategies from dissertation.
-\item Exhibited problem solving: made MPI+OpenMP+OpenACC science simulation code 1.24x faster.
+\item Problem solving by making MPI+OpenMP+OpenACC plasma-physics simulation 1.24x faster.
 %\item Incorporated over-decomposition and locality awareness into low-overhead OpenMP loop scheduling strategies. 
 \end{itemize}
