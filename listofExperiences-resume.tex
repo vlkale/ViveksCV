@@ -4,37 +4,15 @@
 % TODO: get checked by recruiters
 
 
-\newcommand{\myExpTwo}{
-	\item Code development and maintainance of Kokkos Tools by improving build system, tooling overheads, CI, auto-tuning, nvtx/roctx/vtune integration, with 15 github PRs merged.  
-   % \item Contributed to autotuning features to the Kokkos 4.5 release. 
-	\item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
-    \item Implemented prototype LLVM OpenMP loop transformation directive 'split', leading to a 1.24$\times$ speedup for a OpenMP + CUDA benchmark and OpenMP 6.0's split directive. 
-  %  \item Developed and implemented CPU+GPU auto-tuning optimizations, leading to a 1.2x speedup. 
-    \item Drafted standards for OpenMP multi-GPU features for NVIDIA DGX, as well as AWS, Google Cloud and OCI, leading to 19 proposed features for OpenMP 6.1/7.0.
-    
-    %which led to technical report on the OpenMP Set object. 
-
-   % \item Porting HPC Tools and Runtime Systems to exascale+multicloud, collaborating with AWS, Google Cloud and Oracle OCI. 
-
-%    \item Impacted six different production-level scientific applications running on El Capitan and Frontier supercomputers. 
-}
-\newcommand{\myExpThree}{
-  % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
-   \item Implemented OpenMP user-defined multiGPU scheduling for LLVM, offering 2$\times$ speedup over using an MPI parallelization, leading to two papers at IWOMP 24. 
-   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that showed 1.23$\times$ speedup, leading to a paper at SC22's HiPar. 
-   \item Developed performance benchmarks that evaluated 5 major vendor OpenMP GPU implementations, leading to a journal paper and two workshop papers. 
-%  \item Developed benchmarks and evaluating OpenMP implementations, e.g., LLVM's OpenMP, NVIDIA's OpenMP, on Exascale Supercomputers.
-   \item Demonstrated technical leadership as technical Project Manager for ECP SOLLVE project, submitting 9 ECP milestones, organizing 6 OpenMP GPU hackathons, and defining 2 project KPIs. 
- %and voting in 5 OpenMP Committee meetings. 
-   }
-
 
 
 \newcommand{\myExpOne}{
 %\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
-\item Pathfinding and software engineering for tools for Kokkos integrated with (1) HPC performance monitoring (LDMS) and feedback and (2) PMPI and adaptive runtime systems for MPI.
+\item Pathfinding and software engineering for tools for Kokkos integrated with (1) HPC performance monitoring and feedback via LDMS and (2) PMPI and adaptive runtime systems for MPI.
 %\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
-\item Developing AI-assisted HPC Tools through coderosetta.com for Kokkos-CUDA and APEX Kokkos Tools autotuning, resulting in an NVIDIA GTC 2025 poster. 
+\item Developed AI-assisted HPC Tools through LLMs (coderosetta.com) and autotuning (TAU+APEX) for Kokkos applications run on NVIDIA GPUs, resulting in a poster presentation at GTC 2025. 
+\item Research and pathfinding on the use of AI chips, e.g., Cerebras WSE-3, for science simulations. 
+\item Submitted two proposals on correctness tools for HPC, each with \$1.5M in funding for 3 years. 
 }
 \textbf{Sandia National Laboratories}\\
 \textit{Principal Member of Technical Staff II} \hfill \textit{July 2024 - Present}
@@ -44,12 +22,37 @@
 \myExpOne
 \end{itemize}
 
+
+\newcommand{\myExpTwo}{
+	\item Developed and maintained Kokkos Tools for the CMake and Spack build system, tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
+   % \item Contributed to autotuning features to the Kokkos 4.5 release. 
+   \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
+    \item Implemented prototype LLVM OpenMP feature for index set splitting of an OpenMP loop, leading to a 1.2x speedup for an OpenMP + CUDA benchmark and to OpenMP 6.0's new split directive. 
+  %  \item Developed and implemented CPU+GPU auto-tuning optimizations, leading to a 1.2x speedup. 
+    \item Drafted standards for OpenMP multi-GPU features for NVIDIA DGX, and for GPUs  for AWS, Google Cloud, and OCI, leading to 19 proposed features for OpenMP versions 6.1 and 7.0.
+    %which led to technical report on the OpenMP Set object. 
+   % \item Porting HPC Tools and Runtime Systems to exascale+multicloud, collaborating with AWS, Google Cloud and Oracle OCI. 
+
+%    \item Impacted six different production-level scientific applications running on El Capitan and Frontier supercomputers. 
+}
+
 \noindent
 \textit{Senior Member of Technical Staff} \hfill \textit{August 2022 - June 2024}
 %\vspace{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
 \myExpTwo 
-\end{itemize} 
+\end{itemize}
+
+\newcommand{\myExpThree}{
+  % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
+   \item Implemented OpenMP user-defined multi-GPU scheduling for LLVM, offering 2.1x speedup over using MPI parallelization, leading to papers at IWOMP 2020 and BCB 2021.
+   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that achieved a 1.2x speedup, leading to a paper at SC22's HiPar workshop. 
+   \item Developed performance benchmarks that evaluated 5 major vendor OpenMP GPU implementations, leading to an ACM journal paper and an IWOMP 2021 workshop paper. 
+%  \item Developed benchmarks and evaluating OpenMP implementations, e.g., LLVM's OpenMP, NVIDIA's OpenMP, on Exascale Supercomputers. 
+   \item Demonstrated technical leadership as technical project manager for the ECP SOLLVE project, submitting 12 ECP milestone reports, organizing 7 GPU hackathons, and defining 3 project KPIs.
+ %and voting in 5 OpenMP Committee meetings. 
+   }
+\noindent
 \textbf{Brookhaven National Laboratory}\hfill
 \textit{Assistant Computational Scientist} \hfill \textit{May 2019 - August 2022}
 %\vspace{-0.02in}
@@ -59,8 +62,8 @@
 
 
 \newcommand{\myExpFour}{
-\item Implemented and specified OpenMP User-defined Loop Schedules (UDS), leading to a paper at IWOMP, a prototype and a feature branch in LLVM. 
-\item Added UDS feature to Charm++ and RAJA, with one github PR merged in Charm++.
+\item Implemented, tested and experimented with User-defined Loop Schedules (UDS) for OpenMP, leading to a paper at IWOMP 2018 and a prototype library for LLVM and GCC.
+\item Added the UDS feature to RAJA and Charm++'s CkLoop, with 1 github PR merged in Charm++.
 }
 \noindent
 \textbf{Charmworks}\hfill
@@ -71,15 +74,15 @@
 \end{itemize}
 
 \newcommand{\myExpFive}{
-\item Developed  methodology for a synergistic loop scheduling and load balancing strategy, leading to 1.2$\times$ speedup on the PIC benchmark and an SC18 Best Poster Candidate.
+\item Performance analysis and optimization of 3-D image reconstruction application on NVIDIA GPUs via CUPTI and auto-tuning, leading to a performance-enhanced CUDA version of the application. 
+\item Developed tuning support for coordinated loop scheduling and load balancing in Charm++, leading to a 1.2x speedup on a particle-in-cell benchmark code and a Best Poster Candidate at SC18.
 
-\item Performance analysis and optimization of 3-D image reconstruction application on NVIDIA GPUs via CUPTI and auto-tuning, leading to new CUDA version for PtychoLib. 
 }
 \noindent
 %\comments{
-\textbf{University of Southern California / ISI}\hfill
+\textbf{USC - Information Sciences Institute}\hfill
 \textit{Computer Scientist} \hfill \textit{Dec 2016 - May 2018}
-\begin{itemize}[itemsep=-0.2em]
+\begin{itemize}[itemsep=-0.1em]
 \myExpFive
 \end{itemize}
 
@@ -93,9 +96,13 @@
 %\item \small Working on transformations in LLVM. 
 
 
-
 \newcommand{\myExpSix}{
-\item Implemented 3 loop schedules in Charm++'s CkLoop library, leading to 3 github PRs merged. 
+
+\item Extended Charm++ to offer a novel runtime system capability of coordinating inter-node load balancing and intra-node loop scheduling, leading to 2 github PRs merged in Charm++.
+
+%\item Provided PR reviews for CharmMPI, an MPI implementation providing adaptive runtime support. 
+
+%Implemented 2 loop schedules in the extended Charm++ library, leading to a 1.4x speedup of a 3-D Jacobi code on a node of LBL-NERSC's Cori.
 %\item Helped to improve portability of Charm++ to desktop platforms. 
 }
 \noindent
@@ -116,6 +123,6 @@
 %\vspace*{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
 %\item Developed LLVM OpenMP lw-sched library that allows application programmers to use strategies from dissertation.
-\item Problem solving by making MPI+OpenMP+OpenACC plasma-physics simulation 1.24x faster.
+\item Sped up a plasma-physics Fortran MPI+OpenACC code by 1.2x via a combination of GPU offload optimizations and loop transformations on an NVIDIA K80 GPU.
 %\item Incorporated over-decomposition and locality awareness into low-overhead OpenMP loop scheduling strategies. 
 \end{itemize}
