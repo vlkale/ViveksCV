@@ -7,13 +7,17 @@
 
 
 \newcommand{\myExpOne}{
+%\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
 \item Pathfinding and software engineering for tools for Kokkos integrated with (1) HPC performance monitoring and feedback via LDMS and (2) PMPI and adaptive runtime systems for MPI.
+%\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
 \item Developed AI-assisted HPC Tools through LLMs (coderosetta.com) and autotuning (TAU+APEX) for Kokkos applications run on NVIDIA GPUs, resulting in a poster presentation at GTC 2025. 
 \item Research and pathfinding on the use of AI chips, e.g., Cerebras WSE-3, for science simulations. 
 \item Submitted two proposals on correctness tools for HPC, each with \$1.5M in funding for 3 years. 
 }
+
+\subsection*{Technical Leadership and Industry-grade Open-source HPC Software}
 \textbf{Sandia National Laboratories}\\
-\textit{Principal Member of Technical Staff II} \hfill \textit{July 2024 - Present}
+{Principal Member of Technical Staff II} \hfill \textit{July 2024 - Present}
 %\vspace{-0.02in}
 \noindent
 \begin{itemize}[itemsep=-0.1em]\onlyitems[include={1,2}]
@@ -25,17 +29,12 @@
 	\item Developed and maintained Kokkos Tools for the CMake and Spack build system, tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
    % \item Contributed to autotuning features to the Kokkos 4.5 release. 
    \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
-    \item Implemented prototype LLVM OpenMP feature for index set splitting of an OpenMP loop, leading to a 1.2x speedup for an OpenMP + CUDA benchmark and to OpenMP 6.0's new split directive. 
-  %  \item Developed and implemented CPU+GPU auto-tuning optimizations, leading to a 1.2x speedup. 
-    \item Drafted standards for OpenMP multi-GPU features for NVIDIA DGX, and for GPUs  for AWS, Google Cloud, and OCI, leading to 19 proposed features for OpenMP versions 6.1 and 7.0.
-    %which led to technical report on the OpenMP Set object. 
-   % \item Porting HPC Tools and Runtime Systems to exascale+multicloud, collaborating with AWS, Google Cloud and Oracle OCI. 
-
-%    \item Impacted six different production-level scientific applications running on El Capitan and Frontier supercomputers. 
+ %   \item Implemented prototype LLVM OpenMP feature for index set splitting of an OpenMP loop,  and to OpenMP 6.0's new split directive. 
+    \item Implemented new features in LLVM OpenMP, leading to a 1.2x speedup for a Kokkos-OpenMP+CUDA benchmark, 3 OpenMP 6.0 features, and 19 feature proposals for OpenMP 6.1.
 }
 
 \noindent
-\textit{Senior Member of Technical Staff} \hfill \textit{August 2022 - June 2024}
+{Senior Member of Technical Staff} \hfill \textit{August 2022 - June 2024}
 %\vspace{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
 \myExpTwo 
@@ -52,75 +51,89 @@
    }
 \noindent
 \textbf{Brookhaven National Laboratory}\hfill
-\textit{Assistant Computational Scientist} \hfill \textit{May 2019 - August 2022}
-%\vspace{-0.02in}
+{Assistant Computational Scientist} \hfill \textit{May 2019 - August 2022}
 \begin{itemize}[itemsep=-0.1em]
 \myExpThree
 \end{itemize}
 
 
+\subsection*{HPC Software Development and Peformance Engineering}
 \newcommand{\myExpFour}{
-\item Implemented, tested and experimented with User-defined Loop Schedules (UDS) for OpenMP, leading to a paper at IWOMP 2018 and a prototype library for LLVM and GCC.
-\item Added the UDS feature to RAJA and Charm++'s CkLoop, with 1 github PR merged in Charm++.
+\item Implemented User-defined Loop Schedules (UDS) for OpenMP and RAJA via a prototype library for LLVM and GCC, leading to a paper at IWOMP 2018 and 3 github PRs merged in Charm++. 
+
+\item Performance analysis and optimization of MPI+CUDA science simulations application on NVIDIA GPUs via CUPTI and auto-tuning, leading to 1.4x speedup of an application for chip design. 
+\item Developed novel and efficient multi-level loop schedulers in Charm++, leading to a 1.2x speedup on the particle-in-cell benchmark PRK code and a Best Poster Candidate at SC18.
+%\item Added the UDS feature to RAJA and Charm++'s CkLoop, with 1 github PR merged in Charm++.
 }
 \noindent
-\textbf{Charmworks}\hfill
-\textit{Software Engineer} \hfill \textit{May 2018 - May 2019}
-\vspace{-0.01in}
+\textbf{USC/ISI + Charmworks, Inc.}\hfill
+{Software Engineer} \hfill \textit{Jan 2016 - May 2019}
+\vspace{-0.1in}
 \begin{itemize}[itemsep=-0.1em]
 \myExpFour
 \end{itemize}
 
+\comments{
 \newcommand{\myExpFive}{
 \item Performance analysis and optimization of 3-D image reconstruction application on NVIDIA GPUs via CUPTI and auto-tuning, leading to a performance-enhanced CUDA version of the application. 
 \item Developed tuning support for coordinated loop scheduling and load balancing in Charm++, leading to a 1.2x speedup on a particle-in-cell benchmark code and a Best Poster Candidate at SC18.
-
 }
+
 \noindent
-%\comments{
 \textbf{USC - Information Sciences Institute}\hfill
 \textit{Computer Scientist} \hfill \textit{Dec 2016 - May 2018}
 \begin{itemize}[itemsep=-0.1em]
 \myExpFive
 \end{itemize}
 
-%\vspace{-0.02in}
-
-%\item Worked in team to manage computational performance aspects of running an application program for 3-D image reconstruction algorithms on NVIDIA GPUs.  
-%\item Ensured external network infrastructure to support transfer of application code's input data files were adequate for an application code's efficient execution using the Globus Toolkit. 
-%\item Translated an x-ray tomography code written in Matlab code to C code and then parallelizing it to run on a supercomputer
-%having nodes with GPGPUs.
-%\item \small Doing optimizations for MPI+CUDA application code involving low-overhead loop scheduling and loop optimizations such as loop unrolling. 
-%\item \small Working on transformations in LLVM. 
-
-
+% accomplished x as measured by y, by doing z 
 \newcommand{\myExpSix}{
-
 \item Extended Charm++ to offer a novel runtime system capability of coordinating inter-node load balancing and intra-node loop scheduling, leading to 2 github PRs merged in Charm++.
-
-%\item Provided PR reviews for CharmMPI, an MPI implementation providing adaptive runtime support. 
-
-%Implemented 2 loop schedules in the extended Charm++ library, leading to a 1.4x speedup of a 3-D Jacobi code on a node of LBL-NERSC's Cori.
-%\item Helped to improve portability of Charm++ to desktop platforms. 
 }
 \noindent
-\textbf{Charmworks}\hfill
+\textbf{Charmworks, Inc.}\hfill
 \textit{Software Developer} \hfill \textit{Jan 2016 - Dec 2016} 
 %\vspace*{-0.02in}
 \begin{itemize}
 \myExpSix
-%TODO: consider adding 'including in cloud environments' the end of
-%the sentence. 
-%TODO: make paragraph 
-
-%\item Assisted with business aspects of a high-tech startup. 
 \end{itemize} 
 \noindent
 \textbf{University of Illinois}\hfill
 \textit{Postdoctoral Associate} \hfill \textit{Jul 2015 - Dec 2015}
-%\vspace*{-0.02in}
 \begin{itemize}[itemsep=-0.1em]
-%\item Developed LLVM OpenMP lw-sched library that allows application programmers to use strategies from dissertation.
 \item Sped up a plasma-physics Fortran MPI+OpenACC code by 1.2x via a combination of GPU offload optimizations and loop transformations on an NVIDIA K80 GPU.
-%\item Incorporated over-decomposition and locality awareness into low-overhead OpenMP loop scheduling strategies. 
+\end{itemize}
+
+
+
+
+}
+
+\noindent
+\textbf{LLNL + UIUC}\hfill Researcher \hfill \textit{Jan 2010 – Dec 2015}
+\vspace*{-0.1in}
+\begin{itemize}[itemsep=-0.1em]
+%\item Measured MPI communication delays for micro-benchmarks codes run on supercomputers and worked to find tools to measure dequeue overheads of OpenMP loop schedulers. 
+%\item Created a software system for automated performance optimization and application programmer usability of low-overhead hybrid scheduling
+%strategies.
+\item Implemented a ROSE-based compiler pass and PMPI-based runtime system for MPI+OpenMP applications to use loop scheduling techniques, leading to a 1.4x speedup on a multi-core cluster. 
+\item Developed prototype for MPIch shared memory extensions, leading a paper with 370+ citations.
+\item Implemented multi-core and GPU performance optimizations for domains of linear algebra, blood flow, fusion, and combustion, leading to 2 papers at IPDPS.
+
+%\item Assessed further opportunities for performance improvement of low-overhead schedulers, including improvement of spatial locality
+%of low-overhead schedulers. 
+\end{itemize}
+
+
+\subsection*{General Software Engineering}
+
+\noindent
+\textbf{Proteus Technologies + Wolfram} \hfill {Software Developer} \hfill \textit{Aug 2007 – Aug 2008}
+\vspace*{-0.1in}
+\begin{itemize}[itemsep=-0.1em]
+\item Developed and tested a service-oriented software to monitor health of a large-scale distributed system, leading to an internal white paper and software package. 
+\item Implemented functionality in Mathematica for users to send emails within a kernel, via sendmail and TLS, leading to a software feature in Mathematica.
+
+%\item Developed company standards for software development through system requirements specifications, Design Documentation.
+%\item Designed and implemented algorithms for power management of clusters, leading to a white paper 
 \end{itemize}

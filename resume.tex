@@ -13,17 +13,27 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+%NOTE: this needs xetex
+%\usepackage{fontspec}
 \usepackage{lmodern}
 \usepackage[english]{babel}
 \usepackage{xcolor}
 \usepackage{pgfkeys,pgffor}
 \usepackage{onlyitems}
 \usepackage{hyperref}
+\usepackage{xspace}
+
+% NOTE: need XeTex for these
+%\setmainfont{Times New Roman}
+%\setsansfont{Arial}
+%\setmonofont[Color={0019D4}]{Courier New}
+
+\newcommand{\myResumeFont}{lmss}
 
 \begin{document} 
 
+\fontfamily{lmss}\selectfont
 \begin{center}
-\fontfamily{cmss}\selectfont
     \Large \textbf{Vivek L. Kale} \\
     \normalsize
 
@@ -32,51 +42,27 @@
 
 \textbf{Github}: \href{http://github.com/vlkale}{github.com/vlkale} | \textbf{Website}: \href{http://vlkale.github.io}{vlkale.github.io} | \textbf{US Citizen with Secret Clearance}
 \end{center}
-%\vspace{0.5cm}
 \noindent\rule{\linewidth}{0.4pt}
 
 \vspace{-0.1in}
-%\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-%\begin{center} 
-%\fontfamily{lmss}\selectfont 
-%\input{contactInfo}
-%\end{center}
-%\moveleft.5\sectionwidth\centerline{U.S. Citizen} 
 
-\section*{\fontfamily{lmss}\selectfont Professional Summary}
+\section*{\fontfamily{\myResumeFont}\selectfont Professional Summary}
 \input{ProfessionalSummary}
 
-\section*{\fontfamily{lmss}\selectfont Relevant Experience}
-%\vspace{0.02in}
-\input{listofExperiences-resume} 
-
-%\section{Research Overview} 
-%I have worked on low-overhead dynamic scheduling strategies for
-%performance tuning MPI+OpenMP codes on multi-core processors. The
-%techniques have been applied to dense matrix factorization codes,
-%specifically Communication-avoiding LU and Communication-avoiding
-%QR. I have applied the strategies to regular mesh computations and
-%Lattice-Boltzmann simulations, and most recently, n-body
-%simulations. The scheduling strategies developed can be beneficial to
-%mitigate the amplification problem, a problem shown to cause serious
-%performance bottlenecks for bulk-synchronous and loosely synchronous
-%MPI applications running on next-generation supercomputers or a
-%cloud-based infrastructure.
+\section*{\fontfamily{\myResumeFont}\selectfont Relevant Experience}
+\input{listOfExperiences-bySkill}
+%\input{listofExperiences-resume}
 
 
-%\vspace{-0.10in}
-\section*{\fontfamily{lmss}\selectfont Education}
-%\vspace{0.2in}
+\section*{\fontfamily{\myResumeFont}\selectfont Technical Skills}
+\input{listOfSkillSetsForResume}
+\section*{\fontfamily{\myResumeFont}\selectfont Education}
 \input{listEducation-resume1pager}
 
 
-\section*{\fontfamily{lmss}\selectfont Technical Skills} 
-%\vspace{0.01in}
-\input{listOfSkillSetsForResume}
-%\vspace*{-0.2in}
 
-\section*{\fontfamily{lmss}\selectfont Open-source Software Projects} 
-%\vspace{-0.01in}
+
+\section*{\fontfamily{\myResumeFont}\selectfont Open-source Software Projects}
 \input{listOfProjects-for1pagerResume} 
 
 
@@ -84,8 +70,6 @@
 %\section*{\fontfamily{lmss}\selectfont Awards} 
 %\vspace{-0.01in}
 %\input{listOfAwards} 
-
-
 
 %\section*{\fontfamily{lmss}\selectfont Hobbies} 
 %\vspace{-0.01in}
@@ -103,7 +87,7 @@
 
 
 %\section{Additional}
-\input{additionalInfo-forResume}
+%\input{additionalInfo-forResume}
 %\section{Services}
 %\vspace*{-0.05in}
 %\input{listOfServices}
