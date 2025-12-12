@@ -1,13 +1,11 @@
 
 
-
-
 \newcommand{\myExpOne}{
-%\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
-\item Software design and engineering for tools for distributed Kokkos, specifically (1) inter-process profiling and adaptivity via PMPI and (2) job-level monitoring and feedback via LDMS.
+\item Augmenting AI-assisted HPC tools to automate the code optimization workflow of OpenMP and CUDA applications via the OpenAI API.
+\item Software design and engineering for distributed Kokkos tools: (1) inter-process profiling and adaptivity via PMPI and (2) job-level monitoring and feedback via LDMS.
 %\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
-\item Developed AI-assisted HPC Tools through LLMs (coderosetta.com) and autotuning (TAU+APEX) for Kokkos applications run on NVIDIA GPUs, resulting in a poster presentation at GTC 2025. 
-\item Research and pathfinding on the use of AI chips, e.g., Cerebras WSE-3, for science simulations. 
+\item Developed AI-assisted HPC tools using LLMs (coderosetta.com) and auto-tuning (TAU+APEX) for Kokkos applications on NVIDIA GPUs, resulting in a poster presentation at GTC 2025. 
+\item Research and pathfinding on the use of AI chips (e.g., Cerebras WSE-3, Tenstorrent Wormhole) for scientific simulations. 
 \item Submitted two proposals on correctness tools for HPC, each with \$1.5M in funding for 3 years. 
 }
 
@@ -22,9 +20,9 @@
 
 
 \newcommand{\myExpTwo}{
-	\item Developed and maintained Kokkos Tools for the CMake and Spack build system, tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
+	\item Developed and maintained Kokkos Tools for the CMake and Spack build systems, tooling overheads, CI/CD, auto-tuning, and NVTX/ROCTX/VTune integration, leading to 15 merged GitHub PRs.
    % \item Contributed to autotuning features to the Kokkos 4.5 release. 
-   \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
+   \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at the SC24 Correctness Workshop. 
  %   \item Implemented prototype LLVM OpenMP feature for index set splitting of an OpenMP loop,  and to OpenMP 6.0's new split directive. 
     \item Implemented new features in LLVM OpenMP, leading to a 1.2x speedup for a Kokkos-OpenMP+CUDA benchmark, 3 OpenMP 6.0 features, and 19 feature proposals for OpenMP 6.1.
 }
@@ -38,9 +36,9 @@
 
 \newcommand{\myExpThree}{
   % \item Contributed to developing an LLVM OpenMP implementation, specifically the OpenMP implementation's compiler and its runtime, targetted for Department of Energy's upcoming Exascale Supercomputer platforms. 
-   \item Implemented OpenMP user-defined multi-GPU scheduling for LLVM, offering 2.1x speedup over using MPI parallelization, leading to papers at IWOMP 2020 and BCB 2021.
-   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that achieved a 1.2x speedup, leading to a paper at SC22's HiPar workshop. 
-   \item Developed performance benchmarks that evaluated 5 major vendor OpenMP GPU implementations, leading to an ACM journal paper and an IWOMP 2021 workshop paper. 
+   \item Implemented OpenMP user-defined multi-GPU scheduling for LLVM, offering a 2.1x speedup over MPI parallelization, leading to papers at IWOMP 2020 and BCB 2021.
+   \item Implemented performance optimizations in LLVM for OpenMP asynchronous GPU offloading that achieved a 1.2x speedup, leading to a paper at the SC22 HiPar workshop. 
+   \item Developed performance benchmarks that evaluated five major vendor OpenMP GPU implementations, leading to an ACM journal paper and an IWOMP 2021 workshop paper. 
 %  \item Developed benchmarks and evaluating OpenMP implementations, e.g., LLVM's OpenMP, NVIDIA's OpenMP, on Exascale Supercomputers. 
    \item Demonstrated technical leadership as technical project manager for the ECP SOLLVE project, submitting 12 ECP milestone reports, organizing 7 GPU hackathons, and defining 3 project KPIs.
  %and voting in 5 OpenMP Committee meetings. 
@@ -55,7 +53,7 @@
 
 \subsection*{HPC Software Development and Performance Engineering}
 \newcommand{\myExpFour}{
-\item Implemented User-defined Loop Schedules (UDS) for OpenMP and RAJA via a prototype library for LLVM and GCC, leading to a paper at IWOMP 2018 and 3 github PRs merged in Charm++. 
+\item Implemented user-defined loop schedules (UDS) for OpenMP and RAJA via a prototype library for LLVM and GCC, leading to a paper at IWOMP 2018 and three GitHub PRs merged in Charm++. 
 \item Performance analysis and optimization of MPI+CUDA scientific applications on NVIDIA GPUs via CUPTI and auto-tuning, leading to 1.4x speedup of an application for computer chip design.
 \item Developed novel and efficient multi-level loop schedulers in Charm++, leading to a 1.2x speedup on the PRK particle-in-cell benchmark code and a Best Poster Candidate at SC18.
 %\item Added the UDS feature to RAJA and Charm++'s CkLoop, with 1 github PR merged in Charm++.
@@ -111,7 +109,7 @@
 %\item Measured MPI communication delays for micro-benchmarks codes run on supercomputers and worked to find tools to measure dequeue overheads of OpenMP loop schedulers. 
 %\item Created a software system for automated performance optimization and application programmer usability of low-overhead hybrid scheduling
 %strategies.
-\item Implemented a ROSE-based compiler pass and PMPI-based runtime system for MPI+OpenMP applications to use loop scheduling techniques, leading to a 1.4x speedup on a multicore cluster. 
+\item Implemented a ROSE-based compiler pass and PMPI-based runtime system for MPI+OpenMP applications to use loop scheduling techniques, leading to a 1.4x speedup on a multi-core cluster. 
 \item Implemented shared memory extensions for MPICH, leading to a paper with 140+ citations.
 \item Implemented multicore and GPU performance optimizations for domains of linear algebra, blood flow, fusion, and combustion, leading to 2 papers at IPDPS.
 
