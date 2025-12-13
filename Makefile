@@ -1,5 +1,13 @@
 all: resume-1pager.pdf resume.pdf cv.pdf
 
+# Build all cover letters
+coverletters: $(patsubst %.tex,%.pdf,$(wildcard coverletter/*.tex))
+
+coverletter/%.pdf: coverletter/%.tex
+	pdflatex --interaction=batchmode $< > /dev/null 2>&1
+	echo "Generated $@"
+	open $@
+
 TEX_FILES = resume-1pager.tex resume.tex cv.tex
 
 force: resume-1pager.tex resume.tex cv.tex
@@ -31,6 +39,7 @@ cleanResume:
 
 clean:
 	rm -f *.aux *.toc *.log *.pdf
+	rm -f coverletter/*.aux coverletter/*.log coverletter/*.pdf
 
 realclean:
 	rm -f *.aux *.toc *.log *.pdf *.pdf~ *.tex~
