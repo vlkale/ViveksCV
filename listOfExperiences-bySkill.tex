@@ -3,12 +3,12 @@
 
 
 \newcommand{\myExpOne}{
-%\item Technical lead for HPC Tools and Runtime Systems R\&D for Sandia's Exascale Software.
-\item Software design and engineering for tools for distributed Kokkos, specifically (1) inter-process profiling and adaptivity via PMPI and (2) job-level monitoring and feedback via LDMS.
-%\item Implementing and specifying tooling API features for Kokkos Tools for OpenMP, OpenACC, MPI, and C++ standards.
-\item Developed AI-assisted HPC Tools through LLMs (coderosetta.com) and autotuning (TAU+APEX) for Kokkos applications run on NVIDIA GPUs, resulting in a poster presentation at GTC 2025. 
-\item Research and pathfinding on the use of AI chips, e.g., Cerebras WSE-3, for science simulations. 
-\item Submitted two proposals on correctness tools for HPC, each with \$1.5M in funding for 3 years. 
+\item Software design and implementation for tools for distributed GPU programming with Kokkos, specifically (1) inter-process profiling and adaptivity via PMPI and (2) job-level monitoring and feedback via LDMS and DCGM.
+\item Augmenting Kokkos Tools runtime auto-tuning via low-level metrics from, e.g., PAPI, CUPTI, instead of timings, reducing time to converge to optimal Kokkos tuning parameters by 32\%.
+\item Developing energy-aware optimization for Kokkos via NVML, achieving 4x energy reduction.
+\item Released a Spack package for Kokkos Tools, resulting in 16 new users of Kokkos Tools.
+\item Developed AI-assisted HPC Tools through LLMs (coderosetta.com) and autotuning (TAU+APEX) for Kokkos applications run on NVIDIA GPUs, resulting in a poster presentation at GTC 2025.
+\item Research and pathfinding on the use of AI chips with dataflow architectures, e.g., Cerebras WSE-3, for science simulations.
 }
 
 \subsection*{Technical Leadership and Industry-grade Open-source HPC Software}
@@ -22,11 +22,10 @@
 
 
 \newcommand{\myExpTwo}{
-	\item Developed and maintained Kokkos Tools for the CMake and Spack build system, tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
-   % \item Contributed to autotuning features to the Kokkos 4.5 release. 
-   \item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop. 
- %   \item Implemented prototype LLVM OpenMP feature for index set splitting of an OpenMP loop,  and to OpenMP 6.0's new split directive. 
-    \item Implemented new features in LLVM OpenMP, leading to a 1.2x speedup for a Kokkos-OpenMP+CUDA benchmark, 3 OpenMP 6.0 features, and 19 feature proposals for OpenMP 6.1.
+\item Developed and maintained Kokkos Tools for the CMake build system, low tooling overheads, CI/CD, auto-tuning, and nvtx/roctx/vtune integration, leading to 15 merged github PRs.
+\item Developed a debugging tool that detected 7 common Kokkos user bugs by analyzing LLVM IR of Kokkos programs via symbolic execution, leading to a paper at SC24's Correctness workshop.
+\item Implemented 5 new loop transformation features in LLVM OpenMP, leading to a 1.7x speedup for a Kokkos-OpenMP+CUDA benchmark using the index set split construct, 3 accepted OpenMP 6.0 features, and 11 feature proposals in OpenMP 7.0.
+\item Implemented OpenMP multi-GPU parallelism features  in a prototype library for LLVM OpenMP, leading to a 1.3x speedup over the corresponding CUDA-aware MPI approach, and 9 new OpenMP multi-GPU feature proposals for OpenMP 7.0.
 }
 
 \noindent
